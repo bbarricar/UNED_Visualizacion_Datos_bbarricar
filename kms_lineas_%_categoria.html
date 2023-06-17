@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-0ca19f8e65cfd48ab0a7bb25c0e8408f"}, "mark": {"type": "area"}, "encoding": {"color": {"field": "tipo", "title": "Nivel de tensi\u00f3n", "type": "nominal"}, "x": {"field": "fecha", "title": "Fecha", "type": "temporal"}, "y": {"field": "valor", "stack": "normalize", "title": "% kil\u00f3metros instalados", "type": "quantitative"}}, "height": 300, "title": "Evoluci\u00f3n % kilometros instalados", "width": 350, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-0ca19f8e65cfd48ab0a7bb25c0e8408f": [{"valor": 21191.0, "porcentaje": 0.4903581832654543, "fecha": "2015-01-01T02:00:00+00:00", "tipo": "km de circuito a 400 kV", "variacion": 0.0, "a\u00f1o": 2015}, {"valor": 21626.0, "porcentaje": 0.4929304260211708, "fecha": "2016-01-01T02:00:00+00:00", "tipo": "km de circuito a 400 kV", "variacion": 2.05, "a\u00f1o": 2016}, {"valor": 19576.0, "porcentaje": 0.4529836318006829, "fecha": "2015-01-01T02:00:00+00:00", "tipo": "km de circuito a 220 kV", "variacion": 0.0, "a\u00f1o": 2015}, {"valor": 19669.0, "porcentaje": 0.4483218853570967, "fecha": "2016-01-01T02:00:00+00:00", "tipo": "km de circuito a 220 kV", "variacion": 0.48, "a\u00f1o": 2016}, {"valor": 2448.0, "porcentaje": 0.056658184933862876, "fecha": "2015-01-01T02:00:00+00:00", "tipo": "km de circuito hasta 132 kV", "variacion": 0.0, "a\u00f1o": 2015}, {"valor": 2577.0, "porcentaje": 0.05874768862173247, "fecha": "2016-01-01T02:00:00+00:00", "tipo": "km de circuito hasta 132 kV", "variacion": 5.27, "a\u00f1o": 2016}, {"valor": 21735.0, "porcentaje": 0.4938006854914132, "fecha": "2017-01-01T02:00:00+00:00", "tipo": "km de circuito a 400 kV", "variacion": 0.5, "a\u00f1o": 2017}, {"valor": 21737.0, "porcentaje": 0.4910657282158503, "fecha": "2018-01-01T02:00:00+00:00", "tipo": "km de circuito a 400 kV", "variacion": 0.01, "a\u00f1o": 2018}, {"valor": 19694.0, "porcentaje": 0.4474335830086499, "fecha": "2017-01-01T02:00:00+00:00", "tipo": "km de circuito a 220 kV", "variacion": 0.13, "a\u00f1o": 2017}, {"valor": 19788.0, "porcentaje": 0.44705217015772303, "fecha": "2018-01-01T02:00:00+00:00", "tipo": "km de circuito a 220 kV", "variacion": 0.48, "a\u00f1o": 2018}, {"valor": 2587.0, "porcentaje": 0.05876573149993693, "fecha": "2017-01-01T02:00:00+00:00", "tipo": "km de circuito hasta 132 kV", "variacion": 0.39, "a\u00f1o": 2017}, {"valor": 2739.0, "porcentaje": 0.06188210162642658, "fecha": "2018-01-01T02:00:00+00:00", "tipo": "km de circuito hasta 132 kV", "variacion": 5.88, "a\u00f1o": 2018}, {"valor": 21748.0, "porcentaje": 0.4893084781248582, "fecha": "2019-01-01T02:00:00+00:00", "tipo": "km de circuito a 400 kV", "variacion": 0.05, "a\u00f1o": 2019}, {"valor": 21764.0, "porcentaje": 0.488384162144631, "fecha": "2020-01-01T02:00:00+00:00", "tipo": "km de circuito a 400 kV", "variacion": 0.07, "a\u00f1o": 2020}, {"valor": 19906.0, "porcentaje": 0.44786344154689406, "fecha": "2019-01-01T02:00:00+00:00", "tipo": "km de circuito a 220 kV", "variacion": 0.6, "a\u00f1o": 2019}, {"valor": 19939.0, "porcentaje": 0.447443027893113, "fecha": "2020-01-01T02:00:00+00:00", "tipo": "km de circuito a 220 kV", "variacion": 0.17, "a\u00f1o": 2020}, {"valor": 2792.0, "porcentaje": 0.06282808032824772, "fecha": "2019-01-01T02:00:00+00:00", "tipo": "km de circuito hasta 132 kV", "variacion": 1.94, "a\u00f1o": 2019}, {"valor": 2860.0, "porcentaje": 0.06417280996225597, "fecha": "2020-01-01T02:00:00+00:00", "tipo": "km de circuito hasta 132 kV", "variacion": 2.44, "a\u00f1o": 2020}, {"valor": 21768.0, "porcentaje": 0.48594469591899114, "fecha": "2021-01-01T02:00:00+00:00", "tipo": "km de circuito a 400 kV", "variacion": 0.02, "a\u00f1o": 2021}, {"valor": 22013.0, "porcentaje": 0.4880930902502644, "fecha": "2022-01-01T02:00:00+00:00", "tipo": "km de circuito a 400 kV", "variacion": 1.13, "a\u00f1o": 2022}, {"valor": 20149.0, "porcentaje": 0.44978837064651767, "fecha": "2021-01-01T02:00:00+00:00", "tipo": "km de circuito a 220 kV", "variacion": 1.05, "a\u00f1o": 2021}, {"valor": 20189.0, "porcentaje": 0.44764719972429623, "fecha": "2022-01-01T02:00:00+00:00", "tipo": "km de circuito a 220 kV", "variacion": 0.2, "a\u00f1o": 2022}, {"valor": 2879.0, "porcentaje": 0.06426693343449115, "fecha": "2021-01-01T02:00:00+00:00", "tipo": "km de circuito hasta 132 kV", "variacion": 0.66, "a\u00f1o": 2021}, {"valor": 2898.0, "porcentaje": 0.06425971002543937, "fecha": "2022-01-01T02:00:00+00:00", "tipo": "km de circuito hasta 132 kV", "variacion": 0.66, "a\u00f1o": 2022}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
